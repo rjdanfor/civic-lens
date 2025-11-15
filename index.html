@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
-  <meta name="author" content="Civic Lens">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
+    <meta name="author" content="Civic Lens">
 
-<!-- ADD Open Graph Meta for title, description, image, url, type -->
+  <!-- ADD Open Graph Meta for title, description, image, url, type -->
+    <meta name="og:title" content="">
+    <meta name="og:description" content="">
+    <meta name="og:image" content="">
+    <meta name="og:url" content="">
+    <meta name="og:type" content="">
+  <!-- ADD link to stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 
-<!-- ADD link to stylesheet -->
-
-  <title>Civic Lens</title>
-</head>
+    <title>Civic Lens</title>
+  </head>
 <body>
 <!-- ADD semantic and validated HTML -->
 <!-- ADD skip to main content -->
+  <a href="#main">Skip to main content</a>
+
+  <header>
     <button id="theme-toggle" aria-label="Toggle light/dark mode">
       <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
@@ -23,102 +31,119 @@
       </svg>
     </button>
 
-      Civic Lens
-      <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
-      
-      <nav class="mobile-nav" aria-label="Mobile Navigation">
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="menu-button">Menu</label>
-        <ul class="menu">
-          <li><a href="#breaking-news">Breaking News</a></li>
-          <li><a href="#featured-aticles">Featured Articles</a></li>
-          <li><a href="#alerts">Alerts</a></li>
-          <li><a href="#social">Social</a></li>
-        </ul>
-      </nav>
-      
-      Welcome to Civic Lens
-        We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
-        <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+    <h1>Civic Lens</h1>
+    <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
+
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <input type="checkbox" id="menu-toggle" hidden>
+      <label for="menu-toggle" class="menu-button">Menu</label>
+      <ul class="menu">
+        <li><a href="#breaking-news">Breaking News</a></li>
+        <li><a href="#featured-aticles">Featured Articles</a></li>
+        <li><a href="#alerts">Alerts</a></li>
+        <li><a href="#social">Social</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome to Civic Lens</h2>
+    <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
+    <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+
+    <section id="breakingNews">
+      <h2>Breaking News</h2>
+
+      <section>
+        <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+        <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
+        <iframe src="videos/water-management.mp4" frameborder="0"></iframe>
+      </section>
+
+      <section>
+        <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+        <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
+        <iframe src="videos/voter-suppression.mp4" frameborder="0"></iframe>
+      </section>
+    </section>
+
+    <section id="articles">
+      <h2>Featured Articles</h2>
+
+      <h3></h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants
+      Former employees speak out about ethical breaches in data privacy and surveillance.
+
+      <h3></h3>Unequal Justice: How Bail Systems Harm the Poor
+      An investigative series on cash bail and its disproportionate impact.
+
+      <h3></h3>nvisible Work: The Lives of Migrant Caregivers
+      Humanizing the labor that keeps households and economies afloat.
+
+      <h3></h3>Redlined Still: A New Map of Modern-Day Housing Discrimination
+      Data visualization showing systemic inequality in real estate today.
+
+      <h3></h3>Climate Injustice: Who Pays for Pollution?
+      Communities of color bear the brunt of environmental damage.
+
+      <h3></h3>Teaching Under Fire: The Fight for Inclusive Education
+      Teachers navigate book bans, curriculum restrictions, and culture wars.
+
+      <h3></h3>Food Deserts and Corporate Abandonment
+      Why access to nutrition is a zip code lottery.
+
+      <h3></h3>Policing Mental Health: A Broken Response System
+      Examining police interactions with those in crisis.
+
+      <h3></h3>The Disinformation Economy
+      Tracing profit motives behind fake news empires.
+
+      <h3></h3>Facing the Algorithm: AI and Racial Bias
+      The coded inequalities that shape our lives.
+
+      <h3></h3>The Voting Maze
+      A guide to understanding your rights amid changing laws.
+
+      <h3></h3>After the Cameras Leave: Long-Term Crisis Recovery
+      Rebuilding trust and infrastructure in disaster-hit communities.
+    </section>
+  </main>
+
+  <aside>
+    <h2>Stay Informed. Stay Empowered.</h2>
+    <p>Receive text messages with the news you want to know.</p>
+
+    <form action="">
+      <label for="fullName">Name</label>
+      <input type="text" name="fullName" id="fullName">
+
+      <label for="mobileNum">Mobile</label>
+      <input type="tel" name="mobileNum" id="mobileNum">
+
+      Notification Preferences
 
       Breaking News
+      Politics
+      Weather
+      Sports
+      Entertainment
+      World
+      Financial
 
-        Federal Investigation Launched into Water Mismanagement in the Southwest
-        The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.
-        videos/water-management.mp4
-        
-        Voter Suppression Bill Faces Pushback in State Supreme Court
-        Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.
-        videos/voter-suppression.mp4
-        
-      Featured Articles
-        
-        The Cost of Silence: Whistleblower Stories from Inside Tech Giants
-        Former employees speak out about ethical breaches in data privacy and surveillance.
-        
-        Unequal Justice: How Bail Systems Harm the Poor
-        An investigative series on cash bail and its disproportionate impact.
-        
-        Invisible Work: The Lives of Migrant Caregivers
-        Humanizing the labor that keeps households and economies afloat.
-        
-        Redlined Still: A New Map of Modern-Day Housing Discrimination
-        Data visualization showing systemic inequality in real estate today.
-        
-        Climate Injustice: Who Pays for Pollution?
-        Communities of color bear the brunt of environmental damage.
-        
-        Teaching Under Fire: The Fight for Inclusive Education
-        Teachers navigate book bans, curriculum restrictions, and culture wars.
-        
-        Food Deserts and Corporate Abandonment
-        Why access to nutrition is a zip code lottery.
-        
-        Policing Mental Health: A Broken Response System
-        Examining police interactions with those in crisis.
-        
-        The Disinformation Economy
-        Tracing profit motives behind fake news empires.
-        
-        Facing the Algorithm: AI and Racial Bias
-        The coded inequalities that shape our lives.
-        
-        The Voting Maze
-        A guide to understanding your rights amid changing laws.
-        
-        After the Cameras Leave: Long-Term Crisis Recovery
-        Rebuilding trust and infrastructure in disaster-hit communities.
-        
-        
-      Stay Informed. Stay Empowered.
-        Receive text messages with the news you want to know.
-        
-        Name
-        
-        Mobile
-        
-        Notification Preferences
-        
-        Breaking News
-        Politics
-        Weather
-        Sports
-        Entertainment
-        World
-        Financial
-        
-        Subscribe
-      
-      Follow Us
-        Twitter/X
-        Instagram
-        YouTube
-        TikTok
-        LinkedIn
-        
-        &copy; 2025 Civic Lens. All rights reserved.
-        
-        
+      Subscribe
+    </form>
+  </aside>
+
+  <footer>
+    <h2>Follow Us</h2>
+    <a href="#">Twitter/X</a>
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">TikTok</a>
+    <a href="#">LinkedIn</a>
+ 
+    <small>&copy; 2025 Civic Lens. All rights reserved.</small>
+  </footer>
+
   <script>
     const toggleButton = document.getElementById('theme-toggle');
   
