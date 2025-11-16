@@ -8,11 +8,11 @@
     <meta name="author" content="Civic Lens">
 
   <!-- ADD Open Graph Meta for title, description, image, url, type -->
-    <meta name="og:title" content="">
-    <meta name="og:description" content="">
+    <meta name="og:title" content="Civic Lens">
+    <meta name="og:description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
     <meta name="og:image" content="">
     <meta name="og:url" content="">
-    <meta name="og:type" content="">
+    <meta name="og:type" content="website">
   <!-- ADD link to stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
@@ -57,54 +57,78 @@
       <section>
         <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
         <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
-        <iframe src="videos/water-management.mp4" frameborder="0"></iframe>
+        <iframe src="videos/water-management.mp4"></iframe>
       </section>
 
       <section>
         <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
         <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
-        <iframe src="videos/voter-suppression.mp4" frameborder="0"></iframe>
+        <iframe src="videos/voter-suppression.mp4"></iframe>
       </section>
     </section>
 
     <section id="articles">
       <h2>Featured Articles</h2>
 
-      <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
-      Former employees speak out about ethical breaches in data privacy and surveillance.
+      <section>
+        <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
+        <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+      </section>
 
-      <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
-      An investigative series on cash bail and its disproportionate impact.
+      <section>
+        <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
+        <p>An investigative series on cash bail and its disproportionate impact.</p>
+      </section>
 
-      <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
-      Humanizing the labor that keeps households and economies afloat.
+      <section>
+        <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
+        <p>Humanizing the labor that keeps households and economies afloat.</p>
+      </section>
 
-      <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
-      Data visualization showing systemic inequality in real estate today.
+      <section>
+        <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
+        <p>Data visualization showing systemic inequality in real estate today.</p>
+      </section>
 
-      <h3>Climate Injustice: Who Pays for Pollution?</h3>
-      Communities of color bear the brunt of environmental damage.
+      <section>
+        <h3>Climate Injustice: Who Pays for Pollution?</h3>
+        <p>Communities of color bear the brunt of environmental damage.</p>
+      </section>
 
-      <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
-      Teachers navigate book bans, curriculum restrictions, and culture wars.
+      <section>
+        <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
+        <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+      </section>
 
-      <h3>Food Deserts and Corporate Abandonment</h3>
-      Why access to nutrition is a zip code lottery.
+      <section>
+        <h3>Food Deserts and Corporate Abandonment</h3>
+        <p>Why access to nutrition is a zip code lottery.</p>
+      </section>
 
-      <h3>Policing Mental Health: A Broken Response System</h3>
-      Examining police interactions with those in crisis.
+      <section>
+        <h3>Policing Mental Health: A Broken Response System</h3>
+        <p>Examining police interactions with those in crisis.</p>
+      </section>
 
-      <h3>The Disinformation Economy</h3>
-      Tracing profit motives behind fake news empires.
+      <section>
+        <h3>The Disinformation Economy</h3>
+        <p>Tracing profit motives behind fake news empires.</p>
+      </section>
 
-      <h3>Facing the Algorithm: AI and Racial Bias</h3>
-      The coded inequalities that shape our lives.
+      <section>
+        <h3>Facing the Algorithm: AI and Racial Bias</h3>
+        <p>The coded inequalities that shape our lives.</p>
+      </section>
 
-      <h3>The Voting Maze</h3>
-      A guide to understanding your rights amid changing laws.
+      <section>
+        <h3>The Voting Maze</h3>
+        <p>A guide to understanding your rights amid changing laws.</p>
+      </section>
 
-      <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
-      Rebuilding trust and infrastructure in disaster-hit communities.
+      <section>
+        <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
+        <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+      </section>
     </section>
   </main>
 
@@ -112,24 +136,39 @@
     <h2>Stay Informed. Stay Empowered.</h2>
     <p>Receive text messages with the news you want to know.</p>
 
-    <form action="">
+    <form action="https://wp.zybooks.com/form-viewer.php" method="post">
       <label for="fullName">Name</label>
-      <input type="text" name="fullName" id="fullName">
+      <input type="text" name="fullName" id="fullName" required>
 
       <label for="mobileNum">Mobile</label>
-      <input type="tel" name="mobileNum" id="mobileNum">
+      <input type="tel" name="mobileNum" id="mobileNum" required>
 
-      Notification Preferences
+      <fieldset>
+        <legend>Notification Preferences</legend>
 
-      Breaking News
-      Politics
-      Weather
-      Sports
-      Entertainment
-      World
-      Financial
+        <label for="newsCheck">Breaking News</label>
+        <input type="checkbox" name="newsCheck" id="newsCheck" checked>
 
-      Subscribe
+        <label for="politics">Politics</label>
+        <input type="checkbox" name="politics" id="politics">
+
+        <label for="weather">Weather</label>
+        <input type="checkbox" name="weather" id="weather">
+
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="sports" id="sports">
+
+        <label for="entertainment">Entertainment</label>
+        <input type="checkbox" name="entertainment" id="entertainment">
+
+        <label for="world">World</label>
+        <input type="checkbox" name="world" id="world">
+
+        <label for="financial">Financial</label>
+        <input type="checkbox" name="financial" id="financial">
+      </fieldset>
+
+      <input type="submit" value="Subscribe" id="submitBtn">
     </form>
   </aside>
 
