@@ -21,7 +21,7 @@
 <body>
 <!-- ADD semantic and validated HTML -->
 <!-- ADD skip to main content -->
-  <a href="#main">Skip to main content</a>
+  <a href="#main" class="sr-only">Skip to main content</a>
 
   <header>
     <button id="theme-toggle" aria-label="Toggle light/dark mode">
@@ -146,26 +146,26 @@
       <fieldset>
         <legend>Notification Preferences</legend>
 
-        <label for="newsCheck">Breaking News</label>
         <input type="checkbox" name="newsCheck" id="newsCheck" checked>
-
-        <label for="politics">Politics</label>
+        <label for="newsCheck">Breaking News</label>
+        
         <input type="checkbox" name="politics" id="politics">
-
-        <label for="weather">Weather</label>
+        <label for="politics">Politics</label>
+        
         <input type="checkbox" name="weather" id="weather">
-
-        <label for="sports">Sports</label>
+        <label for="weather">Weather</label>
+        
         <input type="checkbox" name="sports" id="sports">
-
-        <label for="entertainment">Entertainment</label>
+        <label for="sports">Sports</label>
+        
         <input type="checkbox" name="entertainment" id="entertainment">
-
-        <label for="world">World</label>
+        <label for="entertainment">Entertainment</label>
+        
         <input type="checkbox" name="world" id="world">
-
-        <label for="financial">Financial</label>
+        <label for="world">World</label>
+        
         <input type="checkbox" name="financial" id="financial">
+        <label for="financial">Financial</label>
       </fieldset>
 
       <input type="submit" value="Subscribe" id="submitBtn">
